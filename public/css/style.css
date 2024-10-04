@@ -1,0 +1,48 @@
+body {
+    background-image: url('../img/bg.jpeg');
+    background-size: cover; /* Membuat gambar menutupi seluruh area */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    height: 100vh; /* Pastikan body memiliki tinggi penuh layar */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparan */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query untuk tampilan desktop */
+@media (min-width: 769px) {
+    body {
+        background-attachment: fixed; /* Membuat latar belakang tetap saat scroll */
+    }
+
+    .card {
+        margin: 20px auto; /* Memberi jarak pada card di desktop */
+        max-width: 600px; /* Membatasi lebar maksimal card */
+        width: 90%; /* Card akan mengambil 90% dari lebar layar */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 0 10px; /* Menambah margin pada card di perangkat mobile */
+    }
+}
+
+.btn-logout {
+    background-color: #f44336; /* Merah */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+

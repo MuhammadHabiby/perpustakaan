@@ -1,0 +1,27 @@
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Hijau */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Hijau lebih gelap saat hover */
+}
